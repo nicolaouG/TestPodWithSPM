@@ -3,26 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E09A0F424AC78850038912E /* TestPodWithSPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E09A0F224AC78850038912E /* TestPodWithSPM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E09A0FB24AC78C10038912E /* SomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A0FA24AC78C10038912E /* SomeClass.swift */; };
 		5E09A10324AC79190038912E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A10224AC79190038912E /* AppDelegate.swift */; };
 		5E09A10524AC79190038912E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A10424AC79190038912E /* SceneDelegate.swift */; };
 		5E09A10724AC79190038912E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A10624AC79190038912E /* ContentView.swift */; };
 		5E09A10924AC791B0038912E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10824AC791B0038912E /* Assets.xcassets */; };
 		5E09A10C24AC791B0038912E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10B24AC791B0038912E /* Preview Assets.xcassets */; };
 		5E09A10F24AC791B0038912E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10D24AC791B0038912E /* LaunchScreen.storyboard */; };
-		5E09A12224AC88A10038912E /* TestPodWithSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 5E09A12124AC88A10038912E /* TestPodWithSPM */; };
+		5E09A12F24AC8E5B0038912E /* SomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E09A12824AC8B360038912E /* SomeClass.swift */; };
+		5E09A13024AC8E680038912E /* TestPodWithSPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E09A12924AC8B360038912E /* TestPodWithSPM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E09A13124AC8F190038912E /* TestPodWithSPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */; };
+		5E09A13224AC8F190038912E /* TestPodWithSPM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E09A13324AC8F1A0038912E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E09A0E624AC78850038912E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E09A0EE24AC78850038912E;
+			remoteInfo = TestPodWithSPM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E09A13524AC8F1A0038912E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5E09A13224AC8F190038912E /* TestPodWithSPM.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPodWithSPM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E09A0F224AC78850038912E /* TestPodWithSPM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPodWithSPM.h; sourceTree = "<group>"; };
-		5E09A0F324AC78850038912E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E09A0FA24AC78C10038912E /* SomeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeClass.swift; sourceTree = "<group>"; };
 		5E09A10024AC79180038912E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E09A10224AC79190038912E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E09A10424AC79190038912E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +53,9 @@
 		5E09A10B24AC791B0038912E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E09A10E24AC791B0038912E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E09A11024AC791B0038912E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E09A12024AC88210038912E /* TestPodWithSPM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestPodWithSPM; path = SPMLib/TestPodWithSPM; sourceTree = "<group>"; };
+		5E09A12824AC8B360038912E /* SomeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeClass.swift; sourceTree = "<group>"; };
+		5E09A12924AC8B360038912E /* TestPodWithSPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPodWithSPM.h; sourceTree = "<group>"; };
+		5E09A12A24AC8B360038912E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E09A12224AC88A10038912E /* TestPodWithSPM in Frameworks */,
+				5E09A13124AC8F190038912E /* TestPodWithSPM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +80,7 @@
 		5E09A0E524AC78850038912E = {
 			isa = PBXGroup;
 			children = (
-				5E09A12024AC88210038912E /* TestPodWithSPM */,
-				5E09A11F24AC87C80038912E /* SPMLib */,
-				5E09A0F124AC78850038912E /* TestPodWithSPM */,
+				5E09A12624AC8B360038912E /* Sources */,
 				5E09A10124AC79190038912E /* Example */,
 				5E09A0F024AC78850038912E /* Products */,
 				5E09A11424AC794D0038912E /* Frameworks */,
@@ -72,16 +94,6 @@
 				5E09A10024AC79180038912E /* Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5E09A0F124AC78850038912E /* TestPodWithSPM */ = {
-			isa = PBXGroup;
-			children = (
-				5E09A0F224AC78850038912E /* TestPodWithSPM.h */,
-				5E09A0F324AC78850038912E /* Info.plist */,
-				5E09A0FA24AC78C10038912E /* SomeClass.swift */,
-			);
-			path = TestPodWithSPM;
 			sourceTree = "<group>";
 		};
 		5E09A10124AC79190038912E /* Example */ = {
@@ -113,11 +125,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E09A11F24AC87C80038912E /* SPMLib */ = {
+		5E09A12624AC8B360038912E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5E09A12724AC8B360038912E /* TestPodWithSPM */,
 			);
-			path = SPMLib;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5E09A12724AC8B360038912E /* TestPodWithSPM */ = {
+			isa = PBXGroup;
+			children = (
+				5E09A12824AC8B360038912E /* SomeClass.swift */,
+				5E09A12924AC8B360038912E /* TestPodWithSPM.h */,
+				5E09A12A24AC8B360038912E /* Info.plist */,
+			);
+			path = TestPodWithSPM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +150,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E09A0F424AC78850038912E /* TestPodWithSPM.h in Headers */,
+				5E09A13024AC8E680038912E /* TestPodWithSPM.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,14 +182,15 @@
 				5E09A0FC24AC79180038912E /* Sources */,
 				5E09A0FD24AC79180038912E /* Frameworks */,
 				5E09A0FE24AC79180038912E /* Resources */,
+				5E09A13524AC8F1A0038912E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E09A13424AC8F1A0038912E /* PBXTargetDependency */,
 			);
 			name = Example;
 			packageProductDependencies = (
-				5E09A12124AC88A10038912E /* TestPodWithSPM */,
 			);
 			productName = Example;
 			productReference = 5E09A10024AC79180038912E /* Example.app */;
@@ -235,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E09A0FB24AC78C10038912E /* SomeClass.swift in Sources */,
+				5E09A12F24AC8E5B0038912E /* SomeClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +274,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E09A13424AC8F1A0038912E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E09A0EE24AC78850038912E /* TestPodWithSPM */;
+			targetProxy = 5E09A13324AC8F1A0038912E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E09A10D24AC791B0038912E /* LaunchScreen.storyboard */ = {
@@ -393,7 +425,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestPodWithSPM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/TestPodWithSPM/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,7 +451,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TestPodWithSPM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/TestPodWithSPM/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,13 +537,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5E09A12124AC88A10038912E /* TestPodWithSPM */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TestPodWithSPM;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E09A0E624AC78850038912E /* Project object */;
 }
