@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TestPodWithSPM"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "qyjehgfd qieuyrgf ciuq3yewguf iuq3yewug fd."
 
   # This description is used to generate tags and improve search results.
