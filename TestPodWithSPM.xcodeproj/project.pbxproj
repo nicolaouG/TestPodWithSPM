@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,33 +15,8 @@
 		5E09A10924AC791B0038912E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10824AC791B0038912E /* Assets.xcassets */; };
 		5E09A10C24AC791B0038912E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10B24AC791B0038912E /* Preview Assets.xcassets */; };
 		5E09A10F24AC791B0038912E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E09A10D24AC791B0038912E /* LaunchScreen.storyboard */; };
-		5E09A11524AC794D0038912E /* TestPodWithSPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */; };
-		5E09A11624AC794D0038912E /* TestPodWithSPM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E09A12224AC88A10038912E /* TestPodWithSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 5E09A12124AC88A10038912E /* TestPodWithSPM */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5E09A11724AC794D0038912E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E09A0E624AC78850038912E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E09A0EE24AC78850038912E;
-			remoteInfo = TestPodWithSPM;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5E09A11924AC794D0038912E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5E09A11624AC794D0038912E /* TestPodWithSPM.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5E09A0EF24AC78850038912E /* TestPodWithSPM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPodWithSPM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +31,7 @@
 		5E09A10B24AC791B0038912E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E09A10E24AC791B0038912E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E09A11024AC791B0038912E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E09A11B24AC845F0038912E /* MySPMLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MySPMLib; sourceTree = "<group>"; };
+		5E09A12024AC88210038912E /* TestPodWithSPM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestPodWithSPM; path = SPMLib/TestPodWithSPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E09A11524AC794D0038912E /* TestPodWithSPM.framework in Frameworks */,
+				5E09A12224AC88A10038912E /* TestPodWithSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +56,8 @@
 		5E09A0E524AC78850038912E = {
 			isa = PBXGroup;
 			children = (
-				5E09A11B24AC845F0038912E /* MySPMLib */,
+				5E09A12024AC88210038912E /* TestPodWithSPM */,
+				5E09A11F24AC87C80038912E /* SPMLib */,
 				5E09A0F124AC78850038912E /* TestPodWithSPM */,
 				5E09A10124AC79190038912E /* Example */,
 				5E09A0F024AC78850038912E /* Products */,
@@ -137,6 +113,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5E09A11F24AC87C80038912E /* SPMLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SPMLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -176,14 +159,15 @@
 				5E09A0FC24AC79180038912E /* Sources */,
 				5E09A0FD24AC79180038912E /* Frameworks */,
 				5E09A0FE24AC79180038912E /* Resources */,
-				5E09A11924AC794D0038912E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E09A11824AC794D0038912E /* PBXTargetDependency */,
 			);
 			name = Example;
+			packageProductDependencies = (
+				5E09A12124AC88A10038912E /* TestPodWithSPM */,
+			);
 			productName = Example;
 			productReference = 5E09A10024AC79180038912E /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -266,14 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5E09A11824AC794D0038912E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E09A0EE24AC78850038912E /* TestPodWithSPM */;
-			targetProxy = 5E09A11724AC794D0038912E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E09A10D24AC791B0038912E /* LaunchScreen.storyboard */ = {
@@ -529,6 +505,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E09A12124AC88A10038912E /* TestPodWithSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TestPodWithSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E09A0E624AC78850038912E /* Project object */;
 }
