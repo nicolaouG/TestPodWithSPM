@@ -10,4 +10,5 @@ import Foundation
 
 public class SomeClass {
     public static var getText = "i am the text"
+    public static var getText2 = "i am the 2nd text"
 }
