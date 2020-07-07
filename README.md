@@ -87,7 +87,7 @@ $ pod trunk register email@example.com username
 $ pod trunk push
 ```
 
-##### Notes:
+#### Notes:
 - Delete pod: (version is the tag found in the podspec e.g 0.0.1). It might show an error but usually it is deleted anyways (try deleting it again to see 'No pod found with the specified name')
 ```bash
 $ pod trunk delete podName version
@@ -116,10 +116,18 @@ spec.source_files = Sources/**/*.{h,m,swift}
   - .../ Copy Bundle Resources -> remove pList
   - pod's .h file in .../ Headers / Public
 
-##### Include package
+#### Include package
 File / Swift Packages / Add Package Dependency / ... / paste the git url
 
-##### Edit package
+OR
+
+```ruby
+dependencies: [
+    .package(url: "https://github.com/nicolaouG/TestPodWithSPM", from: "0.0.1"),
+]
+```
+
+#### Edit package
 - Clone it from git
 - Copy the whole library folder and paste it inside the project which might already have it as a dependency (it overrides the dependency)
 - Edit any file(s) (changes are automatically tracked in the cloned lib folder)
