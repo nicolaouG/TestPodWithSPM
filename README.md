@@ -119,11 +119,17 @@ spec.source_files = Sources/**/*.{h,m,swift}
 #### Include package
 File / Swift Packages / Add Package Dependency / ... / paste the git url
 
-OR
+OR:
 
 ```ruby
 dependencies: [
     .package(url: "https://github.com/nicolaouG/TestPodWithSPM", from: "0.0.1"),
+]
+```
+*and*
+```ruby
+targets: [
+    .target(name: "YourSP_or_Project", dependencies: ["TestPodWithSPM"]),
 ]
 ```
 
