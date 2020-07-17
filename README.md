@@ -141,5 +141,10 @@ targets: [
 - Push updated tag
 - Optional: Delete local package (dependency re-appears)
 - File / Swift Packages / Update...
+or
+```bash
+$ swift package update
+```
+and File / Swift Packages / Reset Package Caches
 
 
